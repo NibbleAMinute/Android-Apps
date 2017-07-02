@@ -14,16 +14,16 @@
         android:layout_height="wrap_content"
         android:text="Add One"
         android:onClick="click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="64dp"
         app:layout_constraintLeft_toRightOf="@+id/reset"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="41dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="1.0"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.305"
-        android:layout_marginTop="100dp"
-        app:layout_constraintTop_toBottomOf="@+id/totalLabel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <Button
         android:id="@+id/reset"
@@ -31,13 +31,13 @@
         android:layout_height="wrap_content"
         android:text="Reset"
         android:onClick="reset"
-        android:layout_marginLeft="84dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="100dp"
-        app:layout_constraintTop_toBottomOf="@+id/totalLabel"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_marginBottom="64dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginLeft="188dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/totalLabel"
@@ -50,9 +50,9 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="219dp"
+        android:layout_marginTop="119dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
         app:layout_constraintVertical_bias="0.0" />
@@ -68,10 +68,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/totalLabel"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/totalLabel"
         app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
